@@ -101,3 +101,5 @@ func IsAuthenticated(next http.HandlerFunc) http.HandlerFunc {
 func init() {
 	secretKey = []byte("SecretKey")
 }
+
+// remember this format to pass cookie "curl --cookie "Token=$Token" http://localhost:8080/getmovie"
